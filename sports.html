@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="cv.css" rel="stylesheet" type="text/css">
+    <title>INTERESTS</title>
+
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">CV 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="personal.html">Personal Information</a>
+      <a href="education.html">Education</a>
+      <a href="work.html">Work Experience</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Interests 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="sports.html">Sports</a>
+      <a href="travel.html">Travel</a>
+    </div>
+  </div>
+   <a href="consulting.html">Consulting Service</a>
+   <a href="calculator.html">Calculator</a>
+</div>
+
+
+<p>Sports is a very important thing in human life, it maintains the physical and psychological health ,and here you will find a Short paragraph about sport contains everything you need to know about sports .Here you will find more than one paragraph to choose what suits your ideas.</p>
+<p>Sports are defined as physical or mental exertion by individuals and are committed to maintaining physical or mental fitness. There are many types of exercise that can be practiced  as a healthy habit, such as walking, riding, Swimming, or athletics, and these sports have many benefits on the human body and mind.Sport make the body ideal, consistent, and healthy, as it strengthens it, and fights obesity.</p>
+<p>The benefits of sport for the mind  that it stimulate the mind, and enhance the intelligence of the individual of all kinds, especially psychomotor intelligence, social intelligence. Increase memory strength and activity, because it positively affects brain activity. Enhance the strength of the individual’s observation, improve his speed of intimacy, give him the ability to concentrate, and reduce his mental distraction. Increase students’ academic achievement and reduce their boredom from routine curriculum. Increase the mental and social development of the person, and strengthen the relationship with the surrounding environment.</p>
+<src= "https://topicsinenglish.com/short-paragraph-about-sport/>
+
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div id="container"> <span class="title">My Interests</span>
+  <ul id="imgs">
+    <li><img src="sportsball.jpeg" alt="" /></li>
+    <li><img src="basketball.jpeg" alt="" /></li>
+    <li><img src="soccer.jpeg" alt="" /></li>
+    <li><img src="basketball1.jpeg" alt="" /></li>
+    <li><img src="af.jepg" alt="" /></li>
+    <li><img src="soccer1.jpeg" alt="" /></li>
+    <li><img src="camogie.jpeg" alt="" /></li>
+  </ul>
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="ImageScroll.js"></script> 
+<script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	  
+   
+</body>
+</html>

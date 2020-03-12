@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="cv.css" rel="stylesheet" type="text/css">
+    <title>INTERESTS</title>
+
+	
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">CV 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="personal.html">Personal Information</a>
+      <a href="education.html">Education</a>
+      <a href="work.html">Work Experience</a>
+    </div>
+  </div>
+    <div class="dropdown">
+    <button class="dropbtn">Interests 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="sports.html">Sports</a>
+      <a href="travel.html">Travel</a>
+    </div>
+  </div>
+   <a href="consulting.html">Consulting Service</a>
+   <a href="calculator.html">Calculator</a>
+</div>
+
+<p>To travel from one place to another for different purposes is generally called travelling. People do not travel always for the same purposes. Someone travels to gain knowledge and experience, someone travels for pleasure, someone travels for business purposes etc. It has much educative value. It is a part of education. Our education and book knowledge remain imperfect without travelling. We can learn many things from travelling. It teaches us to trade and commerce, language, sociology, customs, culture, history, geography and so on. Therefore, the educative value of travelling beggars description. Besides this, there are some special benefits of travelling. If a man stays in one place for a long time, he becomes monotonous. Travelling removes our monotony and gives pleasure. It also broadens our outlook and refreshes our mind. A good traveller can easily educate others. He can give us first-hand knowledge of men and matters of another country. I like travelling very much</p>
+<p>Travelling is an important way to gain knowledge and acquire education. It gives the first-hand knowledge to the traveler and the books give the second-hand knowledge. Bookish knowledge can be had from reading books the and practical knowledge can be had from traveling. Hence traveling In regarded as a part of education. During traveling a traveler visits different places both historical and general and comes in touch with people of different regions, faiths, customs, and languages.</p>
+
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div id="container"> <span class="title">My Interests</span>
+  <ul id="imgs">
+    <li><img src="sky.jpeg" alt="" /></li>
+    <li><img src="beach.jpeg" alt="" /></li>
+    <li><img src="world.jpeg" alt="" /></li>
+    <li><img src="hike.jpeg" alt="" /></li>
+    <li><img src="greece.jepg" alt="" /></li>
+    <li><img src="snow.jpeg" alt="" /></li>
+    <li><img src="water.jpeg" alt="" /></li>
+  </ul>
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="ImageScroll.js"></script> 
+<script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	  
+   
+</body>
+</html>
